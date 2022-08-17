@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" as="style" />
+  <title>ISR</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="contenido">
+      <form class="formulario">
+        <h1>Calcular el impuesto sobre la renta</h1>
+        <label for="nombre">Nombre Completo</label>
+        <input id="nombre" type="text" placeholder="Ingrese su nombre completo" />
+        <label for="sueldo">Sueldo Mensual</label>
+        <input id="sueldo" type="number" placeholder="0.00" />
+        <div class="botones">
+          <button type="reset" class="boton boton-limpiar">Limpiar Campos</button>
+          <button type="button" id="btn-abrir-modal" class="boton">Calcular Impuesto</button>
+        </div>
+      </form>
+      <div class="image">
+        <img src="img/mapa.png" alt="honduras" />
+      </div>
+    </div>
+  </div>
+  <dialog id="modal" class="modal">
+    <h2>Resumen de Transaccion</h2>
+    <p>Nombre: <span id="mostrarNombre"></span></p>
+    <p>Sueldo Mensual: <span id="mostrarSueldo"></span></p>
+    <p>Su impuesto Anual sera: <span id="anual"></span></p>
+    <p>Su cobro Mensual sera: <span id="mensual"></span></p>
+    <button class="boton" id="btn-cerrar-modal">Cerrar</button>
+  </dialog>
+  <footer class="footer">
+    <p>Derechos Henry Alvarado</p>
+  </footer>
+  <script src="js/scrits.js"></script>
+</body>
+
+</html>
